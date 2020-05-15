@@ -7,12 +7,6 @@
     "Patient"
   ],
   "date": "2010",
-  "code": [
-    {
-      "system": "http://example.org/system/code/lifelines/nl",
-      "display": "Lifelines Questionnaire 1 part 1"
-    }
-  ],
   "item": [
     {
       "linkId": "1",
