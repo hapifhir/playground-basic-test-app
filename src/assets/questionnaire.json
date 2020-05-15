@@ -10,7 +10,6 @@
   "code": [
     {
       "system": "http://example.org/system/code/lifelines/nl",
-      "code": "VL 1-1, 18-65_1.2.2",
       "display": "Lifelines Questionnaire 1 part 1"
     }
   ],
