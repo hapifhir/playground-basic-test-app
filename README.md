@@ -24,7 +24,9 @@ This project is a skeleton project for querying data from the [HAPI FHIR public 
 
 * [ ] Time the request. Output the time on the footer of the page. Use a pipe for formatting the output.
 
-* [ ] Add a search function to the page. Add two inputs to `AppComponent` - a textbox that takes in a name (first or last), and a datepicker.  Modify the `ApiService` to include a call that searches for a `Patient` based on the name passed in, and the date of birth passed in from the date picker. The results should be reflected in the table. Apply validation to the inputs - the name box cannot contain non-alphabetic characters, and the date field must be a valid date structure.
+* [ ] Add a search function to the page. Add two inputs to `AppComponent` - a textbox that takes in a name (first or last), and a datepicker.  Modify the `ApiService` to include a call that searches for a `Patient` based on the name passed in, and the date of birth passed in from the date picker. The results should be reflected in the table. Use the [SearchParameters section](https://www.hl7.org/fhir/patient.html#search) to help with building your query.
+
+* [ ] Apply validation to the inputs - the name box cannot contain non-alphabetic characters, and the date field must be a valid date structure (YYYY/MM/DD). 
 
 * [ ] Prevent the button search button from multi-clicks wihout using timeouts.
 
@@ -32,15 +34,13 @@ This project is a skeleton project for querying data from the [HAPI FHIR public 
 
 ### Intermediate Tasks:
 
-* [ ] Make the row of each patient clickable, and route to a new component, `QuestionnaireComponent`. 
-
 * [ ] In `QuestionnaireComponent`, generate a form using the `questionnaire.json` file in the `assests` folder. The form should have validation applied to each input.
 
-* [ ] Using the results from the form, generate a [`QuestionnaireResponse`](https://www.hl7.org/fhir/questionnaireresponse.html), with the `subject` being the patient you clicked on from the table.
+* [ ] Using the results from the form, generate a [`QuestionnaireResponse`](https://www.hl7.org/fhir/questionnaireresponse.html). The `QuestionnaireResponse` should follow the structure outlined in the [Resource Content Section](https://www.hl7.org/fhir/questionnaireresponse.html#resource)
 
 * [ ] Display your results at the bottom of the page.
 
-* [ ] Update the two components to be mobile-friendly
+* [ ] Update the `QuestionnaireComponent` to be mobile-friendly.
 
 * [ ] Please include unit tests for your work.
 
