@@ -36,7 +36,7 @@ This project is a skeleton project for querying data from the [HAPI FHIR public 
 
 * [ ] Create a navbar, implement routing from the patient view to another view, the questionnaire view.
 
-* [ ] In the questionnaire view, _dynamically_ generate a form using the `questionnaire.json` file in the `assests` folder. The form should have validation applied to each input. 
+* [ ] In the questionnaire view, _dynamically_ generate a form using the [`questionnaire.json` file](assets/questionnaire.json)  in the `assests` folder. The form should have validation applied to each input. 
 
 * [ ] Using the results from the form, generate a [`QuestionnaireResponse`](https://www.hl7.org/fhir/questionnaireresponse.html). The `QuestionnaireResponse` should follow the structure outlined in the [Resource Content Section](https://www.hl7.org/fhir/questionnaireresponse.html#resource)
 
