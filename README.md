@@ -1,6 +1,6 @@
-# HAPI FHIR Playground: Basic Test App
+# Smile CDR Coding Test
 
-This project is a skeleton project for querying data from the [HAPI FHIR public test server](http://hapi.fhir.org/baseR4)
+This project is a skeleton project for querying data from the [Smile CDR Test Server](https://try.smilecdr.com/baseR4/Patient)
 
 ### Getting Started:
 
