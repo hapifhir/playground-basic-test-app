@@ -6,7 +6,7 @@
   "subjectType": [
     "Patient"
   ],
-  "date": "2010",
+  "date": "2021-08-12",
   "item": [
     {
       "linkId": "1",
@@ -15,47 +15,79 @@
     },
     {
       "linkId": "2",
-      "text": "General questions",
-      "type": "group",
-      "item": [
+      "text": "What is your gender?",
+      "type": "choice",
+      "option": [
         {
-          "linkId": "2.1",
-          "text": "What is your gender?",
-          "type": "string"
+          "valueCoding": {
+            "system": "http://hl7.fhir/org",
+            "code": "male",
+            "display": "Male"
+          }
         },
         {
-          "linkId": "2.2",
-          "text": "What is your date of birth?",
-          "type": "date"
+          "valueCoding": {
+            "system": "http://hl7.fhir/org",
+            "code": "female",
+            "display": "Female"
+          }
         },
         {
-          "linkId": "2.3",
-          "text": "What is your country of birth?",
-          "type": "string"
-        },
-        {
-          "linkId": "2.4",
-          "text": "What is your marital status?",
-          "type": "string"
+          "valueCoding": {
+            "system": "http://hl7.fhir/org",
+            "code": "other",
+            "display": "Other"
+          }
         }
       ]
     },
     {
       "linkId": "3",
-      "text": "Intoxications",
-      "type": "group",
-      "item": [
+      "text": "What is your date of birth?",
+      "type": "date"
+    },
+    {
+      "linkId": "4",
+      "text": "What is your country of birth?",
+      "type": "string"
+    },
+    {
+      "linkId": "5",
+      "text": "What is your marital status?",
+      "type": "choice",
+      "option": [
         {
-          "linkId": "3.1",
-          "text": "Do you smoke?",
-          "type": "boolean"
+          "valueCoding": {
+            "system": "http://hl7.fhir/org",
+            "code": "married",
+            "display": "Married"
+          }
         },
         {
-          "linkId": "3.2",
-          "text": "Do you drink alchohol?",
-          "type": "boolean"
+          "valueCoding": {
+            "system": "http://hl7.fhir/org",
+            "code": "single",
+            "display": "Single"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "http://hl7.fhir/org",
+            "code": "divorced",
+            "display": "Divorced"
+          }
         }
       ]
+    },
+    {
+      "linkId": "6",
+      "text": "Do you smoke?",
+      "type": "boolean"
+    },
+    {
+      "linkId": "7",
+      "text": "Do you drink alchohol?",
+      "type": "boolean"
     }
   ]
 }

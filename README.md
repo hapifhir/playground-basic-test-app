@@ -16,7 +16,7 @@ This project is a skeleton project for querying data from the [Smile CDR Test Se
 
 * [ ] Create a patient view with patients fetched from `https://try.smilecdr.com/baseR4/Patient`. The patients should be sorted by name & birthdate (if a birthdate is in the record). 
 
-* [ ] Display the first & last names, date of birth, address, gender & phone number.
+* [ ] Display the first & last names, birthdate, address, gender & phone number.
  
 * [ ] Ensure the table is responsive. Ensure there is proper error handling for missing elements in the data.
 
@@ -36,10 +36,20 @@ This project is a skeleton project for querying data from the [Smile CDR Test Se
 
 * [ ] Create a navbar, implement routing from the patient view to another view, the questionnaire view.
 
-* [ ] In the questionnaire view, _dynamically_ generate a form using the [`questionnaire.json` file](assets/questionnaire.json)  in the `assests` folder. The form should have validation applied to each input. 
+* [ ] In the questionnaire view, _dynamically_ generate a form and capture the answer for the following questions :- 
 
-* [ ] Using the results from the form, generate a [`QuestionnaireResponse`](https://www.hl7.org/fhir/questionnaireresponse.html). The `QuestionnaireResponse` should follow the structure outlined in the [Resource Content Section](https://www.hl7.org/fhir/questionnaireresponse.html#resource)
+    -    Do you have allergies? **Radio Button (True, False)**
+    -    What is your gender? **Select (Male, Female, Other)**
+    -    What is your date of birth? **Datepicker**
+    -    What is your country of birth? **Textbox**
+    -    What is your marital status? **Select (Married, Single, Divorced)**
+    -    Do you smoke? **Radio Button (True, False)**
+    -    Do you drink alchohol? **Radio Button (True, False)**
 
-* [ ] Display your results at the bottom of the page.
+* [ ] **Bonus** If dynamic form is generated using the [`questionnaire.json` file](assets/questionnaire.json)  in the `assets` folder. The form should have validation applied to each input. 
+
+* [ ] Display the results of the form based on submit at the bottom of the page. 
+
+* [ ] **Bonus** Using the results from the form, generate a [`QuestionnaireResponse`](https://www.hl7.org/fhir/questionnaireresponse.html). The `QuestionnaireResponse` should follow the structure outlined in the [Resource Content Section](https://www.hl7.org/fhir/questionnaireresponse.html#resource)
 
 * [ ] Commit your work.
