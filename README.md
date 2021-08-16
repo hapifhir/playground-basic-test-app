@@ -46,10 +46,10 @@ This project is a skeleton project for querying data from the [Smile CDR Test Se
     -    Do you smoke? **Radio Button (True, False)**
     -    Do you drink alchohol? **Radio Button (True, False)**
 
-* [ ] **Bonus** If dynamic form is generated using the [`questionnaire.json` file](assets/questionnaire.json)  in the `assets` folder. The form should have validation applied to each input. 
-
 * [ ] Display the results of the form based on submit at the bottom of the page. 
 
-* [ ] **Bonus** Using the results from the form, generate a [`QuestionnaireResponse`](https://www.hl7.org/fhir/questionnaireresponse.html). The `QuestionnaireResponse` should follow the structure outlined in the [Resource Content Section](https://www.hl7.org/fhir/questionnaireresponse.html#resource)
-
 * [ ] Commit your work.
+
+* [ ] **Bonus :-** If dynamic form is generated using the [`questionnaire.json` file](assets/questionnaire.json)  in the `assets` folder. The form should have validation applied to each input. 
+
+* [ ] **Bonus :-** Using the results from the form, generate a [`QuestionnaireResponse`](https://www.hl7.org/fhir/questionnaireresponse.html). The `QuestionnaireResponse` should follow the structure outlined in the [Resource Content Section](https://www.hl7.org/fhir/questionnaireresponse.html#resource)
